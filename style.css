@@ -13,6 +13,8 @@ body {
   color: black;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* NAVBAR */
@@ -67,6 +69,7 @@ body {
 
 /* MAIN CONTAINER */
 .container {
+  margin: auto;
   background-color: white;
   color: #333;
   padding: 3em;
@@ -78,6 +81,7 @@ body {
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
   margin: 3em auto;
   max-width: 600px;
+  width: 90%;
 }
 
 .container h1 {
@@ -170,17 +174,19 @@ footer {
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .container {
-    width: 90%;
     padding: 2em;
+    margin: auto;
   }
 
   .btn-group {
     flex-direction: column;
+    align-items: center;
     gap: 0.8em;
   }
 
   button {
-    width: 220px;
+    width: 100%;
+    max-width: 250px;
   }
 
   .nav-wrapper {
@@ -188,9 +194,11 @@ footer {
     gap: 1em;
     padding: 1em;
     border-radius: 2em;
+    text-align: center;
   }
 
   .nav-links {
     gap: 1em;
+    gap: 0;
   }
 }
