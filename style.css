@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+  color: white;
+}
+/*NAVBAR*/
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5em;
+}
+
+.nav-wrapper {
+  width: 90%;
+  max-width: 1100px;
+  padding: 0.8em 2em;
+  border-radius: 3em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.brand {
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2em;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  padding: 0.5em 1.2em;
+  border-radius: 2em;
+  transition: 0.3s ease;
+  position: relative;
+}
+
+/* Modern hover effect */
+.nav-links a:hover {
+  background: linear-gradient(135deg, #3a3a5a, #4b4b7a);
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(75, 75, 122, 0.5);
+}
+
+/*MAIN CONTAINER*/
+
+.container {
+  background-color: white;
+  color: #333;
+  padding: 3em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  margin: auto;
+  border-radius: 1.5em;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+  transition: 0.3s ease;
+}
+
+.btn-group {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+}
+
+button {
+  padding: 1em 2em;
+  font-size: 1rem;
+  border-radius: 2em;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+/* Button Colors */
+#red {
+  background: linear-gradient(45deg, #ff4d4d, #cc0000);
+  color: white;
+  text-shadow: 0 0 8px rgba(255, 80, 80, 0.6);
+}
+#green {
+  background: linear-gradient(45deg, #2ecc71, #1e8449);
+  color: white;
+  text-shadow: 0 0 8px rgba(46, 204, 113, 0.6);
+}
+#blue {
+  background: linear-gradient(45deg, #3498db, #1f618d);
+  color: white;
+  text-shadow: 0 0 8px rgba(52, 152, 219, 0.6);
+}
+#random {
+  background: linear-gradient(45deg, #e0e0e0, #bdbdbd);
+  color: #333;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+/*FOOTER*/
+
+footer {
+  width: 100%;
+  margin-top: auto;
+  padding: 2em 0;
+
+  background: linear-gradient(135deg, #3a3a5a, #4b4b7a);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+  box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.4);
+}
+
+.footer-bottom {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 2em;
+}
+
+.footer-bottom p {
+  margin: 0.4em 0;
+  color: #e4e4ff;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
+
+.developer {
+  font-size: 0.9rem;
+  color: #d0d0ff;
+}
+
+/* GitHub Link Styling */
+
+.github-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  margin-left: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.3s ease;
+}
+
+.github-link:hover {
+  color: #8fa2ff; /* soft indigo-blue */
+}
