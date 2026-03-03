@@ -11,7 +11,6 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(135deg, #1e1e2f, #2a2a40);
   color: white;
 }
 
@@ -32,17 +31,17 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(15px);
   border: 1px solid rgba(255, 255, 255, 0.2);
-
+  background: linear-gradient(135deg, #3a3a5a, #4b4b7a);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
 }
 
 .brand {
   font-size: 1.2rem;
   font-weight: bold;
+  letter-spacing: 1px;
   color: white;
 }
 
@@ -55,13 +54,18 @@ body {
 .nav-links a {
   text-decoration: none;
   color: white;
+  font-weight: 500;
   padding: 0.5em 1.2em;
   border-radius: 2em;
   transition: 0.3s ease;
+  position: relative;
 }
 
+/* Modern hover effect */
 .nav-links a:hover {
   background: linear-gradient(135deg, #3a3a5a, #4b4b7a);
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(75, 75, 122, 0.5);
 }
 
 /*ABOUT SECTION*/
@@ -72,6 +76,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 4em 2em;
+  
 }
 
 .about-container {
@@ -87,12 +92,13 @@ body {
 .about-container h1 {
   font-size: 2.5rem;
   margin-bottom: 1em;
+  color: #333;
 }
 
 .about-container p {
   margin-bottom: 1.5em;
   line-height: 1.7;
-  color: #dcdcff;
+  color: #333;
 }
 
 /*FEATURES*/
@@ -138,6 +144,7 @@ body {
 }
 
 .mission h2 {
+  color: #333;
   margin-bottom: 1em;
 }
 
@@ -188,4 +195,51 @@ footer {
 
 .github-link:hover {
   color: #8fa2ff; /* soft indigo-blue */
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  /* Navbar */
+  .nav-wrapper {
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    border-radius: 2em;
+  }
+
+  .nav-links {
+    gap: 1em;
+  }
+
+  /* Container */
+  .container {
+    width: 90%;
+    padding: 2em;
+  }
+
+  .container h1 {
+    font-size: 1.8rem;
+  }
+
+  /* Buttons stack nicely */
+  .btn-group {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8em;
+  }
+
+  button {
+    padding: 0.8em 1.5em;
+    font-size: 0.9rem;
+  }
+
+  /* Footer spacing */
+  .footer-bottom {
+    padding: 0 1em;
+  }
+
+  .footer-bottom p {
+    font-size: 0.85rem;
+  }
 }
